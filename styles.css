@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
 .wrapper {
     width: 100%;
     height: 100%;
@@ -6,21 +16,39 @@
 }
 
 .header {
-    background-color: rgb(43, 202, 149);
+    background-color: #FFFFFF;
     grid-column: 2 /4;
     padding: 5rem;
 }
 
 .sidebar {
-    background-color: rgb(235, 68, 62);
+    background-color: #1992D4;
+    color: #FFFFFF;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    padding: 8rem;
+    padding: 2rem 2rem;
+    display: grid;
+    grid-template-rows: auto auto 1fr ;
+    gap: 3rem;
+    justify-items: start;
+    align-items: start;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    font-weight: 500;
+}
+
+.sidebar li {
+   
+   margin: 0.5rem 0;
 }
 
 
 .main {
-    background-color: rgb(231, 187, 90);
+    background-color: #E2E8F0;
     grid-column: 2 / 3;
     padding: 2rem;
+    grid-template-rows: auto auto 1fr;
 }
