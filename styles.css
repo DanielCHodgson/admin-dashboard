@@ -9,6 +9,12 @@
         "wdth" 100;
 }
 
+li img,
+.logo img {
+    filter: invert(1);
+    object-fit: contain;
+}
+
 .wrapper {
     width: 100%;
     height: 100%;
@@ -166,10 +172,10 @@
 .logo {
     width: 100%;
     padding: 0.5rem;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
+    display: flex;
     gap: 0.5rem;
+    justify-items: center;
+    align-items: center;
 }
 
 
@@ -185,23 +191,21 @@
 }
 
 .sidebar li {
-    margin: 1.5rem 0;
-    height: 1rem;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
+    margin: 0.2rem 0;
+    display: flex;
     gap: 1rem;
+    align-items: center; 
 }
 
-li img,
-.logo img {
-    filter: invert(1);
-    object-fit: contain;
+.sidebar li:hover {
+    color: #dadbdd;
 }
 
-
-.sidebar a {
-    text-decoration: none;
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: start;
 }
 
 .sidebar a {
@@ -213,9 +217,7 @@ li img,
     text-decoration: none;
 }
 
-.sidebar li:hover {
-    color: #dadbdd;
-}
+
 
 .main {
     display: grid;
