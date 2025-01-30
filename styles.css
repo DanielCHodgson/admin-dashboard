@@ -259,7 +259,7 @@ li img,
 
 .project-card {
     min-width: 400px;
-    height: auto;
+    height: 200px;
     padding: 2rem 1rem 0rem 1rem;
     margin: 0 1rem 1rem 0;
     background-color: #FFFFFF;
@@ -272,12 +272,11 @@ li img,
 }
 
 .card-buttons {
-    display: grid;
-    padding: 1rem 0 2rem 0;
-    grid-template-columns: 1fr auto auto;
+    padding: 1rem;
+    display: flex;
     gap: 10%;
-    justify-items: end;
-    align-items: end;
+    justify-content: end;
+    align-items: center;
 }
 
 
@@ -286,11 +285,11 @@ li img,
 }
 
 .announcement-card {
+    min-width: 250px;
     background-color: #FFFFFF;
     border-radius: 10px;
     padding: 2rem;
     margin-top: 1rem;
-
 }
 
 .announcement-header {
@@ -306,6 +305,7 @@ li img,
 }
 
 .trending-card {
+    min-width: 250px;
     padding: 1rem;
     background-color: #FFFFFF;
     border-radius: 10px;
