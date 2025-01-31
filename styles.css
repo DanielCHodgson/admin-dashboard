@@ -30,7 +30,6 @@
     transition: all 0.04s ease;
 }
 
-
 ::-webkit-scrollbar {
     width: 0.5rem;
     height: 0.5rem;
@@ -80,17 +79,6 @@ li img,
     height: 1.5rem;
 }
 
-.header svg:hover {
-    cursor: pointer;
-    scale: 1.2;
-}
-
-@media (max-width: 999px) {
-    .header {
-        padding: 1rem 0.5rem 0.5rem 0.5rem;
-    }
-}
-
 .search {
     padding-left: 1rem;
     grid-row: 1 / 2;
@@ -123,9 +111,10 @@ li img,
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 3rem;
+    gap: 0.5rem;
     font-weight: 600;
 }
+
 
 .user {
     min-width: 200px;
@@ -177,34 +166,19 @@ li img,
     grid-area: 1 / 2 / 1 / 3;
 }
 
-@media (max-width: 999px) {
 
-    .user {
-        padding-top: 1rem;
-        gap: 0.2rem;
-    }
+#bell {
+    padding: 0 2rem 0 1rem;
+}
 
-    #primary-pfp {
-        margin-left: 1rem;
-    }
-
-
-    .user p {
-        font-size: 1rem;
-    }
-
-    #username {
-        font-size: 1.2rem;
-    }
-
+#change-theme {
+    padding-right: 1rem;
 }
 
 #bell:hover,
 #change-theme:hover {
     cursor: pointer;
-    width: 1.5rem;
-    height: 1.5rem;
-    fill: #30BA3B;
+    scale: 1.2;
 }
 
 .buttons {
@@ -344,7 +318,6 @@ li img,
     overflow-y: auto;
 }
 
-
 .project-card {
     min-width: 200px;
     height: 250px;
@@ -380,10 +353,7 @@ li img,
 .card-buttons svg:hover {
     cursor: pointer;
     scale: 1.2;
-
 }
-
-
 
 .right-panel {
     display: grid;
@@ -394,7 +364,6 @@ li img,
     overflow-y: scroll;
     overflow-x: visible;
 }
-
 
 .announcements,
 .trending {
@@ -443,4 +412,29 @@ li img,
 .trending-pfp {
     border-radius: 50%;
     object-fit: cover;
+}
+
+@media (max-width: 999px) {
+
+    .header {
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    .user {
+        padding-top: 1rem;
+        gap: 0.2rem;
+    }
+
+    #primary-pfp {
+        margin-left: 1rem;
+    }
+
+
+    .user p {
+        font-size: 1rem;
+    }
+
+    #username {
+        font-size: 1.2rem;
+    }
 }
