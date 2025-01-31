@@ -1,4 +1,4 @@
-const toggleButton = document.getElementById('change-theme');
+const toggleTheme = document.getElementById('change-theme');
 
 function toggleColorScheme() {
     const html = document.documentElement;
@@ -11,4 +11,14 @@ function toggleColorScheme() {
     }
 }
 
-toggleButton.addEventListener('click', toggleColorScheme);
+toggleTheme.addEventListener('click', toggleColorScheme);
+
+
+const sidebar = document.querySelector(".sidebar");
+const sidebarToggle = document.querySelector("#toggle-sidebar");
+const body = document.body;
+
+sidebarToggle.addEventListener("click", () => {
+	sidebar.classList.toggle("visible");
+});
+
