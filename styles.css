@@ -406,6 +406,10 @@ li img,
     border-radius: 10px;
 }
 
+.trending-card p:first-child {
+    font-weight: 600;
+}
+
 .trending-profile {
     display: flex;
     gap: 0.5rem;
