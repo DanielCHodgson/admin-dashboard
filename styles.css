@@ -321,8 +321,8 @@ li img,
 
 .project-card {
     min-width: 200px;
-    height: 250px;
-    padding: 2rem 1rem 0rem 1rem;
+    max-height: 275px;
+    padding: 1rem 1rem 0rem 1rem;
     background-color: var(--card-background);
     border-radius: 10px;
     border-left: 0.8rem solid var(--card-border);
@@ -335,6 +335,10 @@ li img,
 .project-card:hover {
     overflow: visible;
     border-left: 1.5rem solid var(--card-border-hover);
+}
+
+.project-card p {
+    padding: 0.2rem 0;
 }
 
 .card-buttons {
