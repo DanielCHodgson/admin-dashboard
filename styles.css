@@ -492,6 +492,13 @@ li img,
         padding: 1rem;
     }
 
+    .sidebar {
+        min-width: 250px;
+    }
+    .sidebar h1 {
+        font-size: 2.4rem;
+    }
+
     .buttons {
         scale: 0.9;
     }
