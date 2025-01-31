@@ -505,10 +505,13 @@ li img,
 
 @media (max-width: 768px) {
 
+    .wrapper {
+        height: 100%;
+    }
+
     .main {
         width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr;
+        height: auto;
         padding: 1rem;
     }
 
@@ -533,6 +536,5 @@ li img,
     }
 
     .project-list {
-        overflow-y: visible;
     }
 }
