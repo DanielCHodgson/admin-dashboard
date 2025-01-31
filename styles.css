@@ -321,14 +321,13 @@ li img,
 
 .project-card {
     min-width: 200px;
-    max-height: 275px;
+    height: 220px;
     padding: 1rem 1rem 0rem 1rem;
     background-color: var(--card-background);
     border-radius: 10px;
     border-left: 0.8rem solid var(--card-border);
     display: grid;
     grid-template-rows: auto auto 1fr;
-    align-self: space-evenly;
     transition: border 0.2s ease;
 }
 
@@ -346,7 +345,7 @@ li img,
     display: flex;
     gap: 10%;
     justify-content: end;
-    align-items: center;
+    align-items: end;
     fill: var(--card-buttons);
 }
 
